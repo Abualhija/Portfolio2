@@ -7,7 +7,6 @@
 :root {
   font-family: "Open Sans", sans-serif;
   --mainColor: #3a6cf4;
-  --removeBefore: initial;
 
 }
 
@@ -1415,7 +1414,7 @@
   color: #333;
 }
 .contact-info a i span {
-  margin-left: 15px;
+  margin-left: 5px;
   font-size: 0.5em;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
@@ -1516,9 +1515,12 @@ form h2 {
     padding: 0;
   }
   .contact-info {
-    width: 50%;
+    width: 70%;
     text-align: left;
     margin-left: 10px;
+  }
+  .contact form .left-form,.contact form .right-form{
+    width:70%;
   }
 }
 
@@ -1543,7 +1545,7 @@ form h2 {
     font-size: 1.4em;
   }
   .contact-info a i span {
-    font-size: 0.4em;
+    font-size: 0.6em;
   }
 }
 
@@ -1565,6 +1567,9 @@ form h2 {
   }
   .contact h2.contact-header {
     font-size: 2.1em;
+  }
+  .contact-info a i span {
+    font-size: 0.6em;
   }
 }
 

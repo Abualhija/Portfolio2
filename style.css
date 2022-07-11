@@ -588,7 +588,13 @@
   margin: 0 0 50px;
   text-align: center;
 }
-
+.projects-gallery  p.attention{
+  color:rgb(218, 40, 40);
+  font-size: 1em;
+  margin-left: 100px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
 .projects-gallery .image-box {
   text-align: center;
 
@@ -600,7 +606,7 @@
   margin-bottom: 15px;
   margin-right: 25px;
   border-radius: 25px;
-  border: 1px solid #ccc;
+  border: 2px solid var(--mainColor);
   cursor: pointer;
   transition: 0.5s;
 }
@@ -614,12 +620,20 @@
     height: 225px;
     margin-bottom: 25px;
   }
+  .projects-gallery p.attention{
+    margin-left: 145px;
+    font-size: 0.9em;
+  }
 }
 
 @media (max-width: 624px) {
   .projects-gallery .image-box img {
     height: 200px;
   }
+  .projects-gallery p.attention{
+    margin-left: 125px;
+  }
+
 }
 @media (max-width: 500px) {
   .projects-gallery .image-box img {
@@ -628,24 +642,51 @@
   .projects-gallery h2{
     font-size: 2.5em;
   }
+  .projects-gallery p.attention{
+    margin-left: 100px;
+  }
+
 }
 
 @media (max-width: 425px) {
   .projects-gallery .image-box img {
     height: 125px;
   }
+  .projects-gallery p.attention{
+    margin-left: 85px;
+    font-size: 0.75em;
+  }
+
 }
 @media (max-width: 375px) {
   .projects-gallery h2{
     font-size: 2.2em;
   }
+  .projects-gallery p.attention{
+    margin-left: 70px;
+    font-size: 0.67em;
+  }
+
 
 }
 @media (max-width: 320px) {
   .projects-gallery h2{
     font-size: 2.1em;
   }
+  .projects-gallery p.attention{
+    margin-left: 60px;
+    font-size: 0.57em;
+  }
+
 }
+@media (max-width: 300px) {
+  .projects-gallery p.attention{
+    margin-left: 55px;
+    font-size: 0.53em;
+  }
+
+}
+
 
 /* ---START--- popup styling -- elements added by js not html */
 .popup-overlay {
@@ -1152,13 +1193,13 @@
     font-size: 1.2em;
   }
   .features-container .feature-box p {
-    width: 70%;
+    width: 100%;
   }
 }
 
 @media(max-width:500px){
   .features h2{
-    font-size:2.5em;
+    font-size:2.2em;
   }
 }
 @media (max-width: 425px) {
@@ -1170,11 +1211,6 @@
     text-align: left;
   }
 }
-@media(max-width:500px){
-  .features h2{
-    font-size:2.2em;
-  }
-}
 @media (max-width: 320px) {
   .features-container .feature-box h3 {
     font-size: 0.7em;
@@ -1184,6 +1220,9 @@
   }
   .features h2{
     font-size: 2.1em;
+  }
+  .features-container{
+    width:75%
   }
 }
 

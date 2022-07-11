@@ -100,7 +100,7 @@ function randomChoiceFunction(x) {
     backgroundInterval = setInterval(function () {
       let randomNumber = Math.floor(Math.random() * imagesArray.length);
       container.style.backgroundImage = `url(${imagesArray[randomNumber]})`;
-    }, 100);
+    }, 5000);
   } else {
     clearInterval(backgroundInterval);
     container.style.backgroundImage = `url(Images/img5.png)`;

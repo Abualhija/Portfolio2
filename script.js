@@ -103,14 +103,13 @@ function randomChoiceFunction(x) {
     }, 5000);
   } else {
     clearInterval(backgroundInterval);
-    container.style.backgroundImage = `url(Images/img5.png)`;
+    container.style.backgroundImage = `url("Images/img5.png")`;
   }
 }
 /* ---END--- generating random number between 0 and imagesArrayLength 
   to change the background randomly*/
 
 /* ---END--- Changing the background image randomly from many photos*/
-
 
 /* adding open class to settings menu*/
 
@@ -216,47 +215,6 @@ window.onscroll = function () {
 };
 
 /* ---END--- start progress bar */
-
-/* Create Popup for projects images*/
-// let imagesGallery = document.querySelectorAll(".image-box img");
-
-// imagesGallery.forEach(function (e) {
-//   e.addEventListener("click", function () {
-//     /* create Overlay */
-//     let overlay = document.createElement("div");
-//     overlay.className = "popup-overlay";
-//     document.body.appendChild(overlay);
-//     /* ---END--- create Overlay */
-
-//     /* create popup element */
-//     let popupElement = document.createElement("div");
-//     popupElement.className = "popup-Element";
-
-//     /*+++ adding heading to popup element+++*/
-//     if (e.alt !== "") {
-//       let imgeTitle = document.createElement("h3");
-//       let imageText = document.createTextNode(e.alt);
-//       imgeTitle.appendChild(imageText);
-//       popupElement.appendChild(imgeTitle);
-//     }
-//     /*--- ---END--- +++adding heading to popup element+++ ---*/
-
-//     let popupImage = document.createElement("img");
-//     popupImage.src = e.src;
-//     popupElement.appendChild(popupImage);
-//     document.body.appendChild(popupElement);
-//     /* ---END--- create popup element */
-
-//     /* create close button */
-//     let closeButton = document.createElement("span");
-//     closeButton.className = "close-button";
-//     let closeButtonText = document.createTextNode("X");
-//     closeButton.appendChild(closeButtonText);
-//     popupElement.appendChild(closeButton);
-//     /* ---END--- create close button */
-//   });
-// });
-/* ---End--- Create Popup for projects images*/
 
 /* start makeing the popup element disappear */
 
@@ -377,8 +335,6 @@ document.addEventListener("click", function (e) {
 
 /* ---end--- toggle menue */
 
-
-// -----------------------------------------
 /* Create Popup for projects images*/
 
 let imagesGallery = document.querySelectorAll(".image-box img");
@@ -404,7 +360,6 @@ imagesGallery.forEach(function (e) {
     }
     /*--- ---END--- +++adding heading to popup element+++ ---*/
 
-    ////////////*************************+////////////////////// -->
     let popupContainer = document.createElement("div");
     popupContainer.className = "popup-container";
     popupElement.appendChild(popupContainer);
@@ -472,7 +427,6 @@ imagesGallery.forEach(function (e) {
   });
 });
 
-/*--- ---END--- +++adding heading to popup element+++ ---*/
 //////////////*************************+////////////////////// -->
 
 /* Preventing scroll when popup is show*/
@@ -493,19 +447,16 @@ allProjects.forEach(function (e) {
 
 /* ---END--- Preventing scroll when popup is show*/
 
-
 /* prevent submit button from submitting form */
 let formSubmitButton = document.querySelector(".contact .right-form input");
 formSubmitButton.disabled = true;
 
 /* ---END--- prevent submit button from submitting form */
 
-
 /* Current Year for footer */
 document.querySelector(".date-year").innerHTML = new Date().getFullYear();
 
 /*---END--- Current Year for footer */
-
 
 /* Change color of navbar when scrolling */
 let navBarElements = document.querySelectorAll(".change-nav-colors > div");
@@ -513,17 +464,20 @@ let navBarLinks = document.querySelectorAll("ul.links li a");
 
 window.addEventListener("scroll", function () {
   navBarElements.forEach(function (e) {
-    if(window.scrollY > e.offsetTop -200){
-      if(window.scrollY < e.offsetTop + e.offsetHeight){
+    if (window.scrollY > e.offsetTop - 200) {
+      if (window.scrollY < e.offsetTop + e.offsetHeight) {
         navBarLinks.forEach(function (f) {
-          if(f.dataset.section===`.${e.classList[0]}`){
-            document.querySelector('ul.links li a.active').classList.remove('active');
-            f.classList.add('active');
-          };
-        });  
+          if (f.dataset.section === `.${e.classList[0]}`) {
+            document
+              .querySelector("ul.links li a.active")
+              .classList.remove("active");
+            f.classList.add("active");
+          }
+        });
+      }
     }
-  }
-})
+  });
 });
 
 /* ---END--- Change color of navbar when scrolling */
+

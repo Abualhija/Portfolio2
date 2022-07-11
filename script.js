@@ -86,7 +86,7 @@ let imagesArray = generateImages();
 function generateImages() {
   let images = [];
   for (let i = 1; i <= 5; i++) {
-    images.push(`images/img${i}.png`);
+    images.push(`Images/img${i}.png`);
   }
   return images;
 }

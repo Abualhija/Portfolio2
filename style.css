@@ -2,12 +2,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* user-select: none; */
 }
 
 :root {
   font-family: "Open Sans", sans-serif;
   --mainColor: #3a6cf4;
+  --removeBefore: initial;
+
 }
 
 /* ---START--- setting box */
@@ -226,7 +227,7 @@
 
 /* ---START---  main container*/
 .main-container {
-  min-height: 100vh;
+  min-height: 95vh;
   background-image: url("Images/img4.png");
   background-size: cover;
   position: relative;
@@ -275,6 +276,10 @@
 .header-area .links {
   list-style: none;
   margin-right: 15px;
+  /* position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2000; */
 }
 .header-area .links li {
   display: inline-block;
@@ -507,6 +512,7 @@
   padding: 15px;
   margin-bottom: 15px;
   line-height: 2em;
+  border-radius: 10px;
 }
 
 .skill-box .skill-name {
@@ -901,6 +907,7 @@
 
 .timeline-content .left::before {
   right: -40px;
+  
 }
 .timeline-content .right::before {
   left: -40px;
@@ -924,6 +931,8 @@
   height: 0;
   width: 0;
   position: absolute;
+  display: var(--removeBefore);
+  
 }
 
 .timeline-content .left .content::before {
@@ -948,6 +957,11 @@
   padding: 20px;
   background-color: #fff;
   position: relative;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.timeline-content .content:hover  {
+  transform: scale(1.02);
 }
 
 .timeline-content .content h3 {
@@ -981,6 +995,12 @@
   .timeline-content .left .content::before,
   .timeline-content .right .content::before {
     display: none;
+  }
+  .timeline-content .content:hover{
+    transform: initial;
+  }
+  .timeline-content .content {
+    transition: initial;
   }
 }
 

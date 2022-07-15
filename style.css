@@ -1211,13 +1211,13 @@ li a.active::after {
     font-weight: bold;
   }
   .project-links {
-    flex-direction: row;
+    /* flex-direction: row; */
     height: 20%;
     padding: 9px 0 0 0;
   }
 
   .project-links a {
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .popup-Element .popup-container img {
     width: 100%;
@@ -2065,4 +2065,24 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
       0% 100%
     );
   }
+}
+
+/* :hover */ 
+@media(max-width:991px){
+  .setting-box .settings-gear:hover {
+    background-color: darkgray;
+    color:initial;
+  }
+  .header-area .links li a:hover {
+    color: #333;
+  }
+  .features-container .feature-box:hover {
+    transform: scale(1);
+  }
+  .projects-gallery .image-box img:hover {
+    transform: scale(1);
+  }
+  
+  
+  
 }

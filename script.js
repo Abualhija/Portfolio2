@@ -259,22 +259,22 @@ fixedNavbar.forEach(function (span) {
   span.addEventListener("click", function (e) {
     if (e.target.dataset.display === "not-fixed") {
       navBar.classList.remove("fixed");
-      bulletsNav.style.display = "block";
-      document
-        .querySelector(".bullets-option span[data-display=show]")
-        .classList.add("active");
-      document
-        .querySelector(".bullets-option span[data-display=hide]")
-        .classList.remove("active");
+      // bulletsNav.style.display = "block";
+      // document
+      //   .querySelector(".bullets-option span[data-display=show]")
+      //   .classList.add("active");
+      // document
+      //   .querySelector(".bullets-option span[data-display=hide]")
+      //   .classList.remove("active");
     } else {
       navBar.classList.add("fixed");
-      bulletsNav.style.display = "none";
-      document
-        .querySelector(".bullets-option span[data-display=show]")
-        .classList.remove("active");
-      document
-        .querySelector(".bullets-option span[data-display=hide]")
-        .classList.add("active");
+      // bulletsNav.style.display = "none";
+      // document
+      //   .querySelector(".bullets-option span[data-display=show]")
+      //   .classList.remove("active");
+      // document
+      //   .querySelector(".bullets-option span[data-display=hide]")
+      //   .classList.add("active");
     }
     activeClass(e);
   });
@@ -480,3 +480,17 @@ window.addEventListener("scroll", function () {
 });
 
 /* ---END--- Change color of navbar when scrolling */
+
+let screenWidth = window.innerWidth;
+window.onresize = function () {
+  screenWidth = window.innerWidth;
+  if (screenWidth < 670) {
+    document.querySelector(
+      ".introduction-text h1"
+    ).innerHTML = `<h1>I'm a <span> Creative</span><br>Web Developer</h1>`;
+  } else {
+    document.querySelector(
+      ".introduction-text h1"
+    ).innerHTML = `<h1>I'm a <span> Creative</span> Web Developer</h1>`;
+  }
+};

@@ -1801,6 +1801,11 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
   }
 }
 
+@media(min-width:768px )and (max-width:990px){
+  .contact-info a i{
+    font-size:1.7em
+  }
+}
 @media (max-width:768px){
   textarea::placeholder{
     font-size: 1.5em;
@@ -1826,7 +1831,6 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
     
   }
 }
-
 
 
 
@@ -1862,20 +1866,12 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
   .contact-area .direct-contact {
     width: 100%;
   }
-  .contact-area form {
-    width: 100%;
-  }
   .contact form .right-form {
     padding: 0;
   }
-  .contact-info {
-    width: 80%;
-    text-align: left;
-    margin-left: 10px;
-  }
   .contact form .left-form,
   .contact form .right-form {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -1925,27 +1921,15 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
   .contact-info a i span {
     font-size: 0.6em;
   }
+}
+
+@media(max-width:768px){
   .contact .contact-area{
-    width:100%;
-    margin-left:-30px;
+    align-items: center;
   }
-
-}
-
-@media (max-width: 768px) {
-  .contact-info {
-    width: 90%;
+  .contact-info{
+    margin-left: 0;
     text-align: left;
-    margin-left: 60px;
-    font-size: 1.2em;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 425px) {
-  .contact-info {
-    margin-left: 40px;
-    font-size: 1.3em;
   }
 }
 

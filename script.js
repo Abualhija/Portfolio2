@@ -461,13 +461,22 @@ document.querySelector(".date-year").innerHTML = new Date().getFullYear();
 /* Change color of navbar when scrolling */
 let navBarElements = document.querySelectorAll(".change-nav-colors > div");
 let navBarLinks = document.querySelectorAll("ul.links li a");
-
+let navBullets = document.querySelectorAll(".navBullets .bullet");
 window.addEventListener("scroll", function () {
   navBarElements.forEach(function (e) {
     if (window.scrollY > e.offsetTop - 200) {
       if (window.scrollY < e.offsetTop + e.offsetHeight) {
         navBarLinks.forEach(function (f) {
           if (f.dataset.section === `.${e.classList[0]}`) {
+
+            // changing the navBullets color based on active section
+            navBullets.forEach(function (g) {
+              if (g.dataset.section === f.dataset.section) {
+                g.classList.add("active");
+              } else {
+                g.classList.remove("active");
+              }
+            });
             document
               .querySelector("ul.links li a.active")
               .classList.remove("active");

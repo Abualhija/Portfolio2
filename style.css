@@ -35,10 +35,13 @@
   background-color: rgba(0, 0, 0, 0);
   transition: 0.5s;
   display: none;
+  z-index: 102;
+  
 }
 
 .setting-box-overlay.active {
   display: block;
+
 }
 .setting-box .settings-gear {
   position: absolute;

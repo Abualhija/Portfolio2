@@ -247,6 +247,29 @@
   display: none;
 }
 
+.navBullets .bullet.active {
+  background-color: var(--mainColor);
+  position: relative;
+}
+
+.navBullets .bullet.active::after{
+  content: "";
+  width:10px;
+  height:10px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+@media(max-width:425px){
+  .navBullets .bullet.active::after{
+    width:8px;
+    height:8px;
+  }
+}
 .navBullets .bullet:hover .toolTip {
   display: block;
 }

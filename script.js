@@ -444,14 +444,13 @@ let imgBox = document.querySelectorAll(".image-box img");
 imgBox.forEach(function (e) {
   e.addEventListener("click", function () {
     let noDemo = document.querySelectorAll(".no-demo");
-    if ( noDemo ){
+    if (noDemo) {
       noDemo.forEach(function (f) {
         f.remove();
       });
     }
   });
-}
-);
+});
 //////////////*************************+////////////////////// -->
 
 /* Preventing scroll when popup is show*/

@@ -1668,7 +1668,7 @@ li a.active::after {
   background-image: url("Images/worldmap.png");
   background-size: cover;
   background-color: #03a9f4;
-  padding-top: 75px;
+  padding-top: 92px;
   position: relative;
   z-index: 1;
 }

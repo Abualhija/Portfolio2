@@ -197,6 +197,9 @@
   width: 80%;
   border-radius: 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
 }
 /*---END--- reset button in Setting Box---*/
 

@@ -1,0 +1,51 @@
+            <!-- <img
+              src="Images/projectsOut/React JS.jpg"
+              data-index="1"
+              alt="Website Transformation"
+            />
+            <img
+            src="Images/projectsOut/Quiz.png"
+            data-index="10"
+            alt="Programming Test"
+            />  
+            <img
+              src="Images/projectsOut/spd.png"
+              data-index="2"
+              alt="Typing Speed Test"
+            />
+            <img
+              src="Images/projectsOut/Memory_Game.png"
+              data-index="3"
+              alt="Cars Memory Game"
+            />
+            <img 
+            src="Images/projectsOut/fylo.png" 
+            data-index="4" 
+            alt="Fylo" 
+            />
+
+            <img
+              src="Images/projectsOut/YouTube-clone.png"
+              data-index="5"
+              alt="Youtube Clone"
+            />
+            <img
+              src="Images/projectsOut/Twitter-clone.png"
+              data-index="6"
+              alt="Twitter Clone"
+            />
+            <img
+              src="Images/projectsOut/homer.png"
+              data-index="7"
+              alt="Homer Draw"
+            />
+            <img
+              src="Images/projectsOut/freb.png"
+              data-index="8"
+              alt="Ferb Draw"
+            />
+            <img
+              src="Images/projectsOut/carsShowRoom.jpg"
+              data-index="9"
+              alt="Cars ShowRoom"
+            /> -->

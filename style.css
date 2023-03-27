@@ -1759,11 +1759,16 @@ li a.active::after {
   flex-direction: column;
 }
 
+.contact-info a {
+  text-decoration: none;  
+}
 .contact-info a i {
   font-size: 2em;
   color: var(--mainColor);
   margin-bottom: 15px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .contact-info a i span {

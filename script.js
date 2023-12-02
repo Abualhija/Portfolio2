@@ -513,21 +513,57 @@ window.addEventListener("scroll", function () {
 
 /* ---END--- Change color of navbar when scrolling */
 
-changeInnerHTML();
-function changeInnerHTML() {
-  let screenWidth = window.innerWidth;
-  screenWidth = window.innerWidth;
-  if (screenWidth < 670) {
-    document.querySelector(
-      ".introduction-text h1"
-    ).innerHTML = `<h1>I'm a <span> Creative</span><br>Web Developer</h1>`;
-  } else {
-    document.querySelector(
-      ".introduction-text h1"
-    ).innerHTML = `<h1>I'm a <span> Creative</span> Web Developer</h1>`;
-  }
-}
+// document.addEventListener("DOMContentLoaded", function() {
+//   const linuxContainer = document.querySelector("#linux-container");
+//   const linuxProgress = document.querySelector('#linux-progress progress');
+//   const progressValue = parseInt(linuxProgress.getAttribute("value"), 10);
 
-window.addEventListener("resize", () => {
-  changeInnerHTML();
-});
+//   const targetProgressValue = parseInt(linuxProgress.style.getPropertyValue("--progress-value"), 10);
+//   const progressNumber = document.getElementById("linux-number");
+
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         // Start the animation when the element is in view
+//         linuxProgress.style.animationPlayState = 'running';
+//         animateProgress(progressValue, targetProgressValue);
+//         animateNumber(0, targetProgressValue);
+//       } else {
+//         // Pause the animation when the element is out of view
+//         linuxProgress.style.animationPlayState = 'paused';
+//       }
+//     });
+//   });
+
+//   observer.observe(linuxContainer);
+
+//   function animateProgress(startValue, endValue) {
+//     let currentValue = startValue;
+//     const increment = endValue > startValue ? 1 : -1;
+
+//     const progressAnimation = setInterval(() => {
+//       linuxProgress.setAttribute("value", currentValue);
+//       currentValue += increment;
+
+//       if ((increment > 0 && currentValue > endValue) || (increment < 0 && currentValue < endValue)) {
+//         clearInterval(progressAnimation);
+//       }
+//     }, 20); // Adjust the interval for smoother animation
+//   }
+
+//   function animateNumber(startValue, endValue) {
+//     let currentNumber = startValue;
+//     const increment = endValue / 100; // assuming endValue is a percentage
+
+//     const numberAnimation = setInterval(() => {
+//       progressNumber.textContent = currentNumber.toFixed(0);
+//       currentNumber += increment;
+
+//       if (currentNumber > endValue) {
+//         clearInterval(numberAnimation);
+//         progressNumber.textContent = endValue.toFixed(0);
+//       }
+//     }, 20); // Adjust the interval for smoother animation
+  // }
+// }
+// );
